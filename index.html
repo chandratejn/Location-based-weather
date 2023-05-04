@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation and Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <h1>KNOW YOUR CURRENT LOCATION & WEATHER</h1>
+<br>
+            <div>
+                <button id="location" onclick="getLocation()">Get Location</button>
+                <button id="remove" onclick="removeLocation()">Remove Location</button>
+            </div> 
+
+<br>
+            <div>
+                <div><span id="latitude"></span></div>
+                <div><span id="longitude"></span></div>
+            </div>
+<br>       
+            <div >
+                <iframe id="map" alt="Map" > </iframe>
+            </div>
+       
+<!-- <div id="content"> -->
+<!-- </div> -->
+    <div id="weatherDisplay">
+        <h2>Weather Data</h2>
+        <div id="weatherData">
+            <div>Latitude::<span id="lati"></span></div>
+            <div>Longitude::<span id="lon"></span></div>
+            <div>Time-zone:: <div id="location-container"></div></div>
+            <div>Wind-speed::<span id="wind-speed"></span></div>
+            <div>Pressure::<span id="pressure"></span></div>
+            <div>Humidity::<span id="humidity"></span></div>
+            <div>Wind-direction::<span id="wind-direction"></span></div>
+            <div>UV_Index::<span id="uv-index"></span></div>
+            <div>Feels-Like::<span id="feels-like"></span></div>
+
+        </div>
+    </div>
+
+   
+            <script src="script.js"></script>
+</body>
+</html>
